@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="fonts">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Create Post</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 5px;
+      }
+
+      li {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      label {
+        flex: 0 0 8em;
+        margin-right: 1em;
+        margin-bottom: 4px;
+      }
+
+      input,
+      textarea,
+      fieldset {
+        flex: 1 1 20em;
+      }
+
+      fieldset {
+        padding: 0;
+        border: none;
+      }
+
+      legend {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body class="background">
+    <div id="createlayout">
+      <div id="cone">
+        <header id="header">
+          <a href="index.html" class="button">Main Menu</a>
+          <a href="post.html" class="button">Newest Post</a>
+          <a href="posts.html" class="button">All Posts</a>
+          <a href="create.html" class="button">Create Post</a>
+          <a href="membership.html" class="button">Memberships</a>
+          <a href="donations.html" class="button">Donate</a>
+          <a href="newsletter.html" class="button">Newsletter</a>
+          <br />
+          <br />
+        </header>
+      </div>
+      <div id="ctwo">
+        <div class="elementcenter">
+          <h1 id="yellow">Create a new post!</h1>
+          <img
+            src="images/postit.jpeg"
+            height="250"
+            width="350"
+            class="centered"
+          />
+
+          <h2 id="yellow">To create a new post, fill out the form below.</h2>
+        </div>
+        <div class="formcenter">
+          <div class="form">
+            <form
+              action="https://www.w3schools.com/action_page.php"
+              method="get"
+            >
+              <fieldset>
+                <legend>New Post</legend>
+                <label for="fname">First name:</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  class="box2"
+                /><br /><br />
+                <input
+                  type="hidden"
+                  id="custId"
+                  name="custId"
+                  value="1845"
+                  class="box2"
+                />
+                <label for="lname">Last name:</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  class="box2"
+                /><br /><br />
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="box2"
+                /><br /><br />
+                <label for="tel">Phone Number:</label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  class="box2"
+                /><br /><br />
+                <label for="blog">Enter text here:</label><br />
+                <textarea
+                  class="box2"
+                  type="text"
+                  id="blog"
+                  name="blog"
+                  rows="4"
+                  cols="50"
+                  minlength="100"
+                  maxlength="1000"
+                  placeholder="Enter your text here. Minimum of 100 characters, maximum of 1000 characters."
+                ></textarea
+                ><br /><br />
+                <label for="file">Upload and attachment:</label>
+                <input
+                  type="file"
+                  id="file"
+                  name="file"
+                  class="box2"
+                /><br /><br />
+                <label for="schedule"
+                  >Would you like to schedule this post?</label
+                ><br />
+                <label for="Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="Yes"
+                  name="schedule"
+                  value="Yes"
+                /><br />
+                <label for="No">No</label>
+                <input
+                  type="radio"
+                  id="No"
+                  name="schedule"
+                  value="No"
+                /><br /><br />
+                <label for="date">Select a Date:</label><br />
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  class="box2"
+                /><br /><br />
+                <label for="time">Select a Time:</label><br />
+                <input
+                  type="time"
+                  id="time"
+                  name="time"
+                  class="box2"
+                /><br /><br />
+                <label type="select"
+                  >Would you like to password protect this blog post?</label
+                >
+                <select id="select" class="box2">
+                  <option value="blank"></option>
+                  <option value="yes">Yes</option>
+                  <option value="No">No</option></select
+                ><br /><br />
+                <label id="password">Enter a password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="box2"
+                /><br /><br />
+                <label for="secondary">Post to another website:</label>
+                <input
+                  type="url"
+                  id="secondary"
+                  name="secondary"
+                  class="box2"
+                /><br /><br />
+                <label for="social">Cross post to Social Media:</label><br />
+                <input
+                  type="checkbox"
+                  id="facebook"
+                  name="facebook"
+                  value="facebook"
+                />
+                <label for="facebook">Facebook</label><br />
+                <input
+                  type="checkbox"
+                  id="Twitter"
+                  name="Twitter"
+                  value="Twitter"
+                />
+                <label for="Twitter">Twitter</label><br />
+                <input
+                  type="checkbox"
+                  id="linkedin"
+                  name="linkedin"
+                  value="linkedin"
+                />
+                <label for="linkedin">Linkedin</label><br />
+                <input
+                  type="checkbox"
+                  id="Reddit"
+                  name="Reddit"
+                  value="Reddit"
+                />
+                <label for="Reddit">Reddit</label><br /><br />
+                <label for="notify"
+                  >How many notifications should be sent?</label
+                >
+                <input type="number" class="box2" /><br /><br />
+                <label for="notify">Assign a color to this post:</label>
+                <input type="color" /><br /><br />
+                <input class="post" type="reset" name="reset" id="reset" />
+                <input class="post" type="submit" value="Post Now!" />
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="cfour">
+        <footer>
+          <p id="yellow">Author: Alec Rodriguez</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

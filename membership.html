@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="fonts">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Memberships</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 5px;
+      }
+
+      li {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      label {
+        flex: 0 0 8em;
+        margin-right: 1em;
+        margin-bottom: 4px;
+      }
+
+      input,
+      textarea,
+      fieldset {
+        flex: 1 1 20em;
+      }
+
+      fieldset {
+        padding: 0;
+        border: none;
+      }
+
+      legend {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body class="background">
+    <div id="createlayout">
+      <div id="cone">
+        <header id="header">
+          <a href="index.html" class="button">Main Menu</a>
+          <a href="post.html" class="button">Newest Post</a>
+          <a href="posts.html" class="button">All Posts</a>
+          <a href="create.html" class="button">Create Post</a>
+          <a href="membership.html" class="button">Memberships</a>
+          <a href="donations.html" class="button">Donate</a>
+          <a href="newsletter.html" class="button">Newsletter</a>
+          <br />
+          <br />
+        </header>
+      </div>
+      <div id="ctwo">
+        <div class="elementcenter">
+          <h1 id="yellow">Become a member!</h1>
+        </div>
+        <div class="formcenter">
+          <div class="form">
+            <form
+              action="https://www.w3schools.com/action_page.php"
+              method="get"
+            >
+              <fieldset>
+                <legend>Register</legend>
+                <ul>
+                  <li>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" class="box2" />
+                  </li>
+                  <br /><br />
+                  <input
+                    type="hidden"
+                    id="custId"
+                    name="custId"
+                    value="1845"
+                    class="box2"
+                  />
+                  <label for="lname">Last name:</label>
+                  <li>
+                    <input type="text" id="lname" name="lname" class="box2" />
+                  </li>
+                  <br /><br />
+                  <label for="email">Email:</label>
+                  <li>
+                    <input type="email" name="email" id="email" class="box2" />
+                  </li>
+                  <br /><br />
+                  <label id="password">Password:</label>
+                  <li>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      class="box2"
+                    />
+                  </li>
+                  <br /><br />
+                  <input class="post" type="reset" name="reset" id="reset" />
+                  <input class="post" type="submit" value="Submit!" />
+                </ul>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="cfour">
+        <footer>
+          <p id="yellow">Author: Alec Rodriguez</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
